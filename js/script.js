@@ -264,13 +264,21 @@ function miniTest(){
 
   function surnameIn(){
     s__i.innerHTML = `<p>Введіть ваше прізвище!</p>
-    <input id="input" type="text" name="quantity" autocomplete="off">
+    <input class="inp" id="input" type="text" name="quantity" autocomplete="off">
     <button type="button" class= "j__button">Розпочати</button>`;
 
     const j = document.querySelector('.j__button');
     j.addEventListener("click", function(e){
       surname = document.getElementById('input').value;
       test();
+    });
+
+    const key = document.querySelector('.inp');
+    key.addEventListener("keyup", function(event){
+      if(event.code === 'Enter'){
+      surname = document.getElementById('input').value;
+      test();
+    }
     });
   }
 
@@ -307,7 +315,7 @@ function miniTest(){
         }, 1000);
 
         t__i.innerHTML = `<p>${questions[i]}</p>
-        <input id="input" type="text" name="quantity" autocomplete="off">
+        <input class="inp" id="input" type="text" name="quantity" autocomplete="off">
         <button type="button" class= "t__button">Далі</button>
         <div class="time__out"><p>Залишилось часу: <span class="chg_nb"></span></p></div>`;
         const c__n = document.querySelector('.chg_nb');
@@ -332,6 +340,29 @@ function miniTest(){
             mark = count;
             showRes();
           }
+        });
+
+        const key = document.querySelector('.inp');
+        key.addEventListener("keyup", function(e){
+          if(event.code === 'Enter'){
+            clearInterval(count__s);
+            secs = 20;
+
+            clearInterval(idleInterval);
+
+            answer = document.getElementById('input').value;
+
+            if(answer === keys[i]) count++;
+
+            i++;
+
+            if(i < questions.length){
+              loop();
+            }else if (i == questions.length) {
+              mark = count;
+              showRes();
+            }
+         }
         });
     }
 
