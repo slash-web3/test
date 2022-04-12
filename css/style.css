@@ -141,6 +141,7 @@
 
   .icon > input{
     min-width: 300px;
+    font-size: 16px;
   }
   .time__out{
     font-size: 13px;
