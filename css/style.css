@@ -1,0 +1,154 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+  min-width: 500px;
+  min-height: 180px;
+  border: 1px solid #B7CADB;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.30);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon > p{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.main__button{
+  background-color: #2FA4FF;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  min-height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.10);
+}
+
+.main__button:hover{
+  cursor: pointer;
+}
+
+.a__button{
+  background-color: #2FA4FF;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  min-height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.30);
+}
+
+.a__button:hover{
+  cursor: pointer;
+}
+
+.j__button{
+  background-color: #2FA4FF;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  min-height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.30);
+}
+
+.j__button:hover{
+  cursor: pointer;
+}
+
+.t__button{
+  background-color: #2FA4FF;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  min-height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.30);
+}
+
+.t__button:hover{
+  cursor: pointer;
+}
+
+.f__button{
+  background-color: #2FA4FF;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  min-height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.30);
+}
+
+.f__button:hover{
+  cursor: pointer;
+}
+
+.icon > input{
+  display: block;
+  min-width: 460px;
+  min-height: 25px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.icon > input:focus{
+  outline-color: blue;
+}
+
+.time__out{
+  display: block;
+  position: absolute;
+  top: 130px;
+  right: 15px;
+}
+
+.time__out > p{
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 470px){
+  .icon{
+    min-width: 340px;
+    min-height: 160px;
+  }
+  .main__button{
+    font-size: 13px;
+    min-height: 35px;
+  }
+
+  .main__button:hover{
+    cursor: pointer;
+  }
+
+  .icon > p{
+    font-size: 12px;
+  }
+
+  .icon > input{
+    min-width: 300px;
+  }
+  .time__out{
+    font-size: 13px;
+    top: 113px;
+    right: 15px;
+  }
+  .t__button{
+    position: relative;
+    right: 40px;
+  }
+}
