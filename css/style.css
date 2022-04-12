@@ -146,14 +146,14 @@
   .time__out{
     font-size: 13px;
     top: 111px;
-    right: 13.5px;
+    right: 15px;
   }
   .t__button{
     position: relative;
     right: 40px;
   }
   .icon > .js__p{
-    font-size: 16px;
+    font-size: 14px;
     font-family: sans-serif;
   }
 }
