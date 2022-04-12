@@ -367,7 +367,7 @@ function miniTest(){
     }
 
     function showRes(){
-      r__i.innerHTML = `<p>Студент(ка) ${surname} отримав(ла) за тест ${mark}\/${questions.length}</p>
+      r__i.innerHTML = `<p class="js__p">Студент(ка) ${surname} отримав(ла) за тест ${mark}\/${questions.length}</p>
       <button type="button" class= "f__button">Завершити</button>`;
 
       const f = document.querySelector('.f__button');

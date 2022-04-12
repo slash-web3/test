@@ -152,4 +152,8 @@
     position: relative;
     right: 40px;
   }
+  .icon > .js__p{
+    font-size: 16px;
+    font-family: sans-serif;
+  }
 }
